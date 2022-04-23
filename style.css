@@ -32,7 +32,7 @@ header {
 }
 
 #headline {
-  background-image: url("Icons/Ellipse\ 18.svg");
+  background-image: url("Background/Ellipse-1.svg");
   background-repeat: no-repeat;
   margin-top: 40px;
   text-align: center;
@@ -69,12 +69,11 @@ header {
 #divider {
   border: 1px;
   border-style: groove;
-  margin-left: 5%;
 }
 
 #skillset {
   display: flex;
-  background-image: url("Icons/Ellipse-19.svg");
+  background-image: url("Background/Ellipse-2.svg");
   background-repeat: no-repeat;
   background-position: right;
   flex-wrap: wrap;
@@ -101,4 +100,143 @@ span {
 
 ul {
   list-style: none;
+}
+
+#more {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: #a2a3ae;
+  margin-top: 10px;
+}
+
+#recent-works h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  color: #9490ff;
+}
+
+#recent-works-grid {
+  display: grid;
+}
+
+.works {
+  text-align: center;
+}
+
+.works img {
+  width: 327px;
+  height: 236px;
+}
+
+.works h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.works p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+  text-align: left;
+  margin-left: 20px;
+}
+
+#work-1 {
+  background-image: url("Background/Ellipse-3.svg");
+  background-repeat: no-repeat;
+}
+
+#work-2 {
+  background-image: url("Background/Ellipse-4.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#work-3 {
+  background-image: url("Background/Ellipse-5.svg");
+  background-repeat: no-repeat;
+}
+
+.project-languages {
+  display: flex;
+  margin-top: 45px;
+}
+
+.project-languages-1 {
+  margin: 18px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff
+}
+
+.project-languages img {
+  width: 1px;
+  height: 43px;
+}
+
+.n1{
+  text-align: left;
+  margin: 25px;
+}
+
+button {
+  width: 89px;
+  height: 48px;
+  position: static;
+  align-self: flex-start;
+  justify-self: left;
+  background: #7d73fc;
+  color: #fff;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  text-align: center;
+  color: #9390ff;
+}
+
+#contact div {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+}
+
+#input-contact {
+  width: 327px;
+  height: 48px;
+  margin-top: 30px;
+}
+
+#contact button {
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer div {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff
 }
