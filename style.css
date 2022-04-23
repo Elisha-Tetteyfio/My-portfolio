@@ -176,7 +176,7 @@ ul {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #fff
+  color: #fff;
 }
 
 .project-languages img {
@@ -184,7 +184,7 @@ ul {
   height: 43px;
 }
 
-.n1{
+.n1 {
   text-align: left;
   margin: 25px;
 }
@@ -212,6 +212,13 @@ button {
   color: #9390ff;
 }
 
+footer div {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
 #contact div {
   font-weight: 400;
   font-size: 16px;
@@ -232,11 +239,4 @@ button {
 
 footer {
   text-align: center;
-}
-
-footer div {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #ebebff
 }
