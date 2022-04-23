@@ -70,7 +70,7 @@ header {
   border: 1px;
   border-style: groove;
 }
- 
+
 .divider {
   min-width: 370px;
   min-height: auto;
@@ -204,7 +204,7 @@ button {
 }
 
 button:hover {
-  background: #7d73fc;;
+  background: #7d73fc;
   color: #fff;
 }
 
