@@ -188,7 +188,7 @@ ul {
 
 .n1 {
   text-align: left;
-  margin: 25px;
+  margin: 20px;
 }
 
 button {
@@ -218,14 +218,14 @@ button:disabled {
 
 /* footer */
 
-#footer {
+#contact {
   display:flex;
   flex-direction: column;
   color: #191765;
   padding: 24px;
 }
 
-#footer>h2 {
+#contact>h2 {
   margin: 0;
   color: #9390ff;
   font-weight: 500;
@@ -235,7 +235,7 @@ button:disabled {
   padding-top: 120px;
 }
 
-#footer>p {
+#contact>p {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -289,7 +289,7 @@ button:disabled {
   height: 148px;
 }
 
-#submit-button {
+ #submit-button {
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
@@ -298,17 +298,34 @@ button:disabled {
   padding: 12px;
   background-color: #7d73fc;
   margin: 0;
-  margin-top: 40px;
+  margin: 40px auto 40px;
   display: flex;
   justify-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 #submit-button:hover {
-
+  background: #7d73fc;
+  color: #fff;
 }
 
 #submit-button:active {
-  
+  background-color: #5e42d7;
+}
+
+#submit-button:disabled {
+  color: #c8c8d4;
+  background-color: #2a2b33;
+}
+
+footer {
+  text-align: center;
+}
+
+footer div {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
 }
