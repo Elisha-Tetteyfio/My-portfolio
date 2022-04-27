@@ -11,12 +11,15 @@
 - CSS
 - Linters
 
-## Live Demo (if available)
-
-
-
-
 ## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+no neaded
+
+### Setup
+git clone the project and open the index.html file!
 
 
 
@@ -24,9 +27,7 @@
 
 👤 **Elisha Tetteyfio**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Elisha-Tetteyfio)
 
 ## 🤝 Contributing
 
@@ -38,11 +39,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
