@@ -16,18 +16,18 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-no neaded
+
+Code editor
 
 ### Setup
+
 git clone the project and open the index.html file!
-
-
 
 ## Authors
 
 👤 **Elisha Tetteyfio**
 
-- GitHub: [@githubhandle](https://github.com/Elisha-Tetteyfio)
+- GitHub: [@Elisha-Tetteyfio](https://github.com/Elisha-Tetteyfio)
 
 ## 🤝 Contributing
 
@@ -38,7 +38,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
 
 ## 📝 License
 
