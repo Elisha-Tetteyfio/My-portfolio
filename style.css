@@ -325,3 +325,9 @@ footer div {
   line-height: 28px;
   color: #ebebff;
 }
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
