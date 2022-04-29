@@ -200,6 +200,7 @@ button {
   justify-self: left;
   background: #7d73fc;
   color: #edecff;
+  transition-duration: 0.5s;
 }
 
 button:hover {
@@ -299,6 +300,7 @@ button:disabled {
   margin: 40px auto 40px;
   display: flex;
   justify-items: center;
+  transition-duration: 0.3s;
 }
 
 #submit-button:hover {
