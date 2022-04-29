@@ -137,6 +137,10 @@ ul {
   height: auto;
 }
 
+.works img:hover {
+  transform: scale(0.95);
+}
+
 .works h4 {
   font-weight: 500;
   font-size: 32px;
