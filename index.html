@@ -10,14 +10,22 @@
 <body>
     <header>
         <a href="https://github.com/Elisha-Tetteyfio/Portfolio-setup-mobile-version-skeleton" class="menu-element" id="name">Elisha</a>
-        <nav>
+        <nav class="mobile">
             <img src="Icons/Union.svg" alt="Menu" class="menu-element" id="menu">
         </nav>
+        <div class="desktop">
+            <ul>
+                <li> <a href="#Portfolio">Portfolio</a> </li>
+                <li> <a href="#About">#About</a> </li>
+                <li> <a href="#Contact">Contact</a> </li>
+                <li><img src="Icons/Mail.svg" alt="mail"></li>
+            </ul>
+        </div>
     </header>
     <section id="headline">
         <h1 id="headline-1">Elisha Tetteyfio</h1>
         <h2 id="headline-2">Software developer</h2>
-        <p id="content"> <span>I</span> can help you build a product, feature or website. Look through some of my works and experiences! If you like what you see and have a project you need coded,  don't hesitate to contact me.</p>
+        <p id="content">I can help you build a product, feature or website. Look through some of my works and experiences! If you like what you see and have a project you need coded,  don't hesitate to contact me.</p>
     </section>
     <hr>   
     <section id="skillset">
@@ -53,6 +61,10 @@
     </section>
     <hr>    
     <section id="social">
+        <div id="more-1" class="desktop">
+            Work
+            <img src="Icons/downArrow.svg" alt="Arrow">
+        </div>
         <img src="Icons/git.svg" alt="Github">
         <img src="Icons/linkedin.svg" alt="LinkedIn">
         <img src="Icons/Enabled.svg" alt="2">
@@ -65,54 +77,70 @@
     </section>
     <section id="recent-works">
         <h2>MY RECENT WORKS</h2>
-        <hr>        <div id="recent-works-grid">
+        <hr>        
+        <div id="recent-works-grid">
             <div class="works" id="work-1">
-                <img src="Works/work1.png" alt="First work image">
-                <h4>Personal project</h4>
-                <p>This is a project with CSS. In this project, I created a 
-                    replica of 
-                    <a href="https://jolly-kalam-23776e.netlify.app/cssgridresponsive/#section-b">this webpage</a>.
-                    Feel free to checkout the link and compare it with the final work.
-                </p>
-                <ul class="project-languages">
-                    <li class="project-languages-1">html</li>
-                    <li class="project-languages-1">css</li>
-                </ul>
-                <div class="n1"><button>See Project</button></div>
+                <div class="desktop-layout">
+                    <img src="Works/work1.png" alt="First work image">
+                    <div class="desktop-layout-1">
+                    <h4>Personal project</h4>
+                    <p>This is a project with CSS. In this project, I created a 
+                        replica of 
+                        <a href="https://jolly-kalam-23776e.netlify.app/cssgridresponsive/#section-b">this webpage</a>.
+                        Feel free to checkout the link and compare it with the final work.
+                    </p>
+                    <ul class="project-languages">
+                        <li class="project-languages-1">html</li>
+                        <li class="project-languages-1">css</li>
+                    </ul>
+                    <div class="n1"><button>See Project</button></div>
+                
+                </div>
+            </div>
             </div>
             <div class="works" id="work-2">
-                <img src="Works/work2.png" alt="Second work image">
-                <h4>Microverse Project 1</h4>
-                <p>This is a project with CSS. It was an introduction to the 
-                    use of linters and the process required for a code review.
-                </p>
-                <ul class="project-languages">
-                    <li class="project-languages-1">html</li>
-                    <li class="project-languages-1">css</li>
-                </ul>
-                <div class="n1"><button>See Project</button></div>
+                <div class="desktop-layout" id="second-works">
+                    <img src="Works/work2.png" alt="Second work image">
+                    <div class="desktop-layout-1">
+                        <h4>Microverse Project 1</h4>
+                        <p>This is a project with CSS. It was an introduction to the 
+                            use of linters and the process required for a code review.
+                        </p>
+                        <ul class="project-languages">
+                            <li class="project-languages-1">html</li>
+                            <li class="project-languages-1">css</li>
+                        </ul>
+                        <div class="n1"><button>See Project</button></div>
+                    </div>
+                </div>
             </div>
             <div class="works" id="work-3">
-                <img src="Works/work3.png" alt="Third work image">
-                <h4>Personal portfolio project</h4>
-                <p>This project was designed by Microverse to aid new
-                    students design their peronal portfolio. The basic languages
-                    for this project were HTML and CSS.
-                </p>
-                <ul class="project-languages">
-                    <li class="project-languages-1">html</li>
-                    <li class="project-languages-1">css</li>
-                </ul>
-                <div class="n1"><button>See Project</button></div>
+                <div class="desktop-layout">
+                    <img src="Works/work3.png" alt="Third work image">
+                    <div class="desktop-layout-1">
+                        <h4>Personal portfolio project</h4>
+                        <p>This project was designed by Microverse to aid new
+                            students design their peronal portfolio. The basic languages
+                            for this project were HTML and CSS.
+                        </p>
+                        <ul class="project-languages">
+                            <li class="project-languages-1">html</li>
+                            <li class="project-languages-1">css</li>
+                        </ul>
+                        <div class="n1"><button>See Project</button></div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>    
     </section>
     <section id="contact">
-        <h2>Contact me</h2>
+        <h2>Let's chat!</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <form action="https://formspree.io/f/myyobwbp" method="POST">
-          <input type="text" id="client-name" name="name" placeholder="Enter your name" maxlength="30" required><br>
-          <input type="email" id="client-email" name="email" placeholder="Enter your email id" required><br>
+          <input type="text" class="client mobile" id="client-name" name="name" placeholder="Enter your name" maxlength="30" required><br>
+          <input type="text" class="client desktop" id="first-name" name="name" placeholder="First name" maxlength="30" required>
+          <input type="text" class="client desktop" id="last-name" name="name" placeholder="Last name" maxlength="30" required><br>
+          <input type="email" class="client" id="client-email" name="email" placeholder="Enter your e-mail" required><br>
           <textarea id="client-message" name="message" placeholder="Write your message here" maxlength="500" required></textarea>        
           <input id="submit-button" type="submit" value="Send" class="button">
         </form>
