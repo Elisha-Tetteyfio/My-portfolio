@@ -518,11 +518,11 @@ body {
   #work-3 {
     background-image: url("Desktop-background/Background-5.svg"), url("Desktop-background/Background-6.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: left top, 100%,100%;
+    background-position: left top, 100%, 100%;
     background-size: auto, 20%;
   }
 
-  .hr1{
+  .hr1 {
     width: 30%;
   }
 
