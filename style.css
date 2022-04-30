@@ -7,10 +7,6 @@ body {
 }
 
 #headline {
-  text-align: center;
-}
-
-#headline {
   background-image: url("Background/Ellipse-1.svg");
   background-repeat: no-repeat;
   margin-top: 40px;
