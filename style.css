@@ -6,16 +6,16 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#headline { 
+#headline {
   text-align: center;
 }
 
-#headline { 
+#headline {
   background-image: url("Background/Ellipse-1.svg");
   background-repeat: no-repeat;
   margin-top: 40px;
   text-align: center;
-} 
+}
 
 #headline-1 {
   font-weight: 700;
@@ -43,7 +43,7 @@ body {
   color: #c8c8d4;
   margin: 54px auto;
   max-width: 447px;
-} 
+}
 
 @media screen and (max-width: 767px) {
   /* Mobile version */
@@ -66,17 +66,17 @@ body {
     color: #fff;
     text-decoration: none;
   }
-  
+
   #menu {
     min-width: 35.33px;
     height: 22.83px;
   }
-  
+
   .menu-element {
     padding: 5px;
     flex: 1 1;
   }
-  
+
   #skillset {
     display: flex;
     background-image: url("Background/Ellipse-2.svg");
@@ -84,26 +84,26 @@ body {
     background-position: right;
     flex-wrap: wrap;
   }
-  
+
   .languages {
     width: 50%;
     text-align: left;
     color: white;
   }
-  
+
   h4 {
     color: #9490ff;
     margin-left: 35px;
   }
-  
+
   #social {
     text-align: center;
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   #more {
     font-size: 20px;
     font-weight: 500;
@@ -112,7 +112,7 @@ body {
     color: #a2a3ae;
     margin-top: 10px;
   }
-  
+
   #recent-works h2 {
     font-weight: 500;
     font-size: 40px;
@@ -120,25 +120,25 @@ body {
     align-items: center;
     color: #9490ff;
   }
-  
+
   #recent-works-grid {
     display: grid;
   }
-  
+
   .works {
     text-align: center;
   }
-  
+
   .works img {
     min-width: 327px;
     max-width: 500px;
     height: auto;
   }
-  
+
   .works img:hover {
     transform: scale(0.95);
   }
-  
+
   .works h4 {
     font-weight: 500;
     font-size: 32px;
@@ -147,7 +147,7 @@ body {
     color: #fff;
     margin-left: 20px;
   }
-  
+
   .works p {
     font-weight: 400;
     font-size: 20px;
@@ -156,28 +156,28 @@ body {
     text-align: left;
     margin-left: 20px;
   }
-  
+
   #work-1 {
     background-image: url("Background/Ellipse-3.svg");
     background-repeat: no-repeat;
   }
-  
+
   #work-2 {
     background-image: url("Background/Ellipse-4.svg");
     background-repeat: no-repeat;
     background-position: right;
   }
-  
+
   #work-3 {
     background-image: url("Background/Ellipse-5.svg");
     background-repeat: no-repeat;
   }
-  
+
   .project-languages {
     display: flex;
     margin-top: 45px;
   }
-  
+
   .project-languages-1 {
     margin: 18px;
     font-weight: 500;
@@ -187,12 +187,12 @@ body {
     padding-right: 20px;
     border-right: 1px solid #c8c8d4;
   }
-  
+
   .n1 {
     text-align: left;
     margin: 20px;
   }
-  
+
   button {
     min-width: 89px;
     height: 48px;
@@ -204,28 +204,28 @@ body {
     color: #edecff;
     transition-duration: 0.5s;
   }
-  
+
   button:hover {
     background: #7d73fc;
     color: #fff;
   }
-  
+
   button:active {
     background-color: #5e42d7;
   }
-  
+
   button:disabled {
     color: #c8c8d4;
     background-color: #2a2b33;
   }
-  
+
   #contact {
     display: flex;
     flex-direction: column;
     color: #191765;
     padding: 24px;
   }
-  
+
   #contact > h2 {
     margin: 0;
     color: #9390ff;
@@ -235,7 +235,7 @@ body {
     text-align: center;
     padding-top: 120px;
   }
-  
+
   #contact > p {
     margin: 0;
     font-weight: 400;
@@ -245,14 +245,14 @@ body {
     color: #f5f5ff;
     padding-top: 24px;
   }
-  
+
   ::placeholder {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #81818c;
   }
-  
+
   #client-name {
     font-weight: 400;
     font-size: 15px;
@@ -264,7 +264,7 @@ body {
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   #client-email {
     font-weight: 400;
     font-size: 15px;
@@ -276,7 +276,7 @@ body {
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   #client-message {
     font-weight: 400;
     font-size: 15px;
@@ -289,7 +289,7 @@ body {
     box-sizing: border-box;
     height: 148px;
   }
-  
+
   #submit-button {
     font-weight: 500;
     font-size: 15px;
@@ -304,32 +304,32 @@ body {
     justify-items: center;
     transition-duration: 0.3s;
   }
-  
+
   #submit-button:hover {
     background: #7d73fc;
     color: #fff;
   }
-  
+
   #submit-button:active {
     background-color: #5e42d7;
   }
-  
+
   #submit-button:disabled {
     color: #c8c8d4;
     background-color: #2a2b33;
   }
-  
+
   footer {
     text-align: center;
   }
-  
+
   footer div {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #ebebff;
   }
-  
+
   footer ul {
     display: flex;
     justify-content: center;
@@ -340,7 +340,7 @@ body {
 @media screen and (min-width: 767px) {
   /* Desktop version */
 
-  .mobile{
+  .mobile {
     display: none;
   }
 
@@ -366,6 +366,10 @@ body {
     letter-spacing: 0.03em;
     color: #fff;
     text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
   }
 
   header ul {
@@ -398,29 +402,26 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .languages {
     width: 149px;
     text-align: left;
     color: white;
     align-self: center;
   }
-  
+
   h4 {
     color: #9490ff;
     margin-left: 35px;
   }
-  
+
   #social {
     margin: 100px 0;
     display: flex;
   }
-  
-  ul {
-    list-style: none;
-  }
-  
-  #more, #more-1 {
+
+  #more,
+  #more-1 {
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
@@ -437,7 +438,7 @@ body {
     align-items: center;
     color: #9490ff;
   }
-  
+
   #recent-works-grid {
     display: grid;
   }
@@ -446,13 +447,13 @@ body {
     text-align: center;
   }
 
-  .desktop-layout{
+  .desktop-layout {
     display: flex;
     width: 80%;
     max-width: 1156px;
     margin: auto;
   }
-  
+
   .desktop-layout img {
     min-width: 327px;
     width: 60%;
@@ -466,11 +467,11 @@ body {
     width: 40%;
     padding: 5%;
   }
-  
+
   .works img:hover {
     transform: scale(0.95);
   }
-  
+
   .works h4 {
     font-weight: 500;
     font-size: 32px;
@@ -478,7 +479,7 @@ body {
     text-align: left;
     color: #fff;
   }
-  
+
   .works p {
     font-weight: 400;
     font-size: 20px;
@@ -490,28 +491,28 @@ body {
   #second-works {
     flex-direction: row-reverse;
   }
-  
+
   #work-1 {
     background-image: url("Background/Ellipse-3.svg");
     background-repeat: no-repeat;
   }
-  
+
   #work-2 {
     background-image: url("Background/Ellipse-4.svg");
     background-repeat: no-repeat;
     background-position: right;
   }
-  
+
   #work-3 {
     background-image: url("Background/Ellipse-5.svg");
     background-repeat: no-repeat;
   }
-  
+
   .project-languages {
     display: flex;
     margin-top: 0;
   }
-  
+
   .project-languages-1 {
     margin: 18px;
     font-weight: 500;
@@ -521,11 +522,11 @@ body {
     padding-right: 20px;
     border-right: 1px solid #c8c8d4;
   }
-  
+
   .n1 {
     text-align: left;
   }
-  
+
   button {
     min-width: 89px;
     height: 48px;
@@ -546,7 +547,7 @@ body {
     max-width: 684px;
     margin: auto;
   }
-  
+
   #contact > h2 {
     margin: 0;
     color: #9390ff;
@@ -556,7 +557,7 @@ body {
     text-align: center;
     padding-top: 120px;
   }
-  
+
   #contact > p {
     margin: 0;
     font-weight: 400;
@@ -566,7 +567,7 @@ body {
     color: #f5f5ff;
     padding-top: 24px;
   }
-  
+
   ::placeholder {
     font-weight: 400;
     font-size: 15px;
@@ -585,12 +586,12 @@ body {
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   #first-name {
     width: 47%;
     margin-right: 2%;
   }
-  
+
   #last-name {
     width: 47%;
     margin-left: 3%;
@@ -608,7 +609,7 @@ body {
     box-sizing: border-box;
     height: 148px;
   }
-  
+
   #submit-button {
     font-weight: 500;
     font-size: 15px;
@@ -624,28 +625,28 @@ body {
     justify-content: center;
     transition-duration: 0.3s;
   }
-  
+
   #submit-button:hover {
     background: #7d73fc;
     color: #fff;
   }
-  
+
   #submit-button:active {
     background-color: #5e42d7;
   }
-  
+
   #submit-button:disabled {
     color: #c8c8d4;
     background-color: #2a2b33;
   }
-  
+
   footer {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   footer div {
     font-weight: 400;
     font-size: 20px;
@@ -654,7 +655,7 @@ body {
     padding: 5px;
     margin-left: 20px;
   }
-  
+
   footer ul {
     display: flex;
     justify-content: center;
