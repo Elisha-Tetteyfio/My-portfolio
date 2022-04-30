@@ -123,6 +123,7 @@ body {
 
   .works {
     text-align: center;
+    padding-top: 50px;
   }
 
   .works img {
@@ -433,6 +434,12 @@ body {
     line-height: 52px;
     align-items: center;
     color: #9490ff;
+    width: 80%;
+    margin: auto;
+  }
+
+  #hr2 {
+    width: 80%;
   }
 
   #recent-works-grid {
@@ -441,6 +448,7 @@ body {
 
   .works {
     text-align: center;
+    padding-top: 50px;
   }
 
   .desktop-layout {
@@ -473,6 +481,7 @@ body {
     font-size: 32px;
     line-height: 44px;
     text-align: left;
+    margin-left: 0;
     color: #fff;
   }
 
@@ -488,20 +497,33 @@ body {
     flex-direction: row-reverse;
   }
 
+  #second-works > .desktop-layout-1 {
+    margin-left: 0;
+    text-align: left;
+    padding-left: 0;
+  }
+
   #work-1 {
-    background-image: url("Background/Ellipse-3.svg");
+    background-image: url("Desktop-background/Background-3.svg");
     background-repeat: no-repeat;
+    background-size: 22%;
   }
 
   #work-2 {
-    background-image: url("Background/Ellipse-4.svg");
+    background-image: url("Desktop-background/Background-4.svg");
     background-repeat: no-repeat;
     background-position: right;
   }
 
   #work-3 {
-    background-image: url("Background/Ellipse-5.svg");
-    background-repeat: no-repeat;
+    background-image: url("Desktop-background/Background-5.svg"), url("Desktop-background/Background-6.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, 100%,100%;
+    background-size: auto, 20%;
+  }
+
+  .hr1{
+    width: 30%;
   }
 
   .project-languages {
