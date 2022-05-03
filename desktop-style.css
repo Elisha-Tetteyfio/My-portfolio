@@ -1,5 +1,5 @@
-  @media screen and (min-width: 767px) {
-    /* Desktop version */
+@media screen and (min-width: 767px) {
+  /* Desktop version */
 
   .mobile {
     display: none;
@@ -26,7 +26,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     color: #fff;
-    text-decoration: none;  
+    text-decoration: none;
   }
 
   ul {
