@@ -1,57 +1,23 @@
-/* stylelint-disable length-zero-no-unit */
-body {
-  min-width: 375px;
-  margin: 0;
-  background-color: #191765;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+@media screen and (min-width: 767px) {
+  /* Desktop version */
 
-#headline {
-  background-image: url("Background/Ellipse-1.svg");
-  background-repeat: no-repeat;
-  margin-top: 40px;
-  text-align: center;
-}
-
-#headline-1 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 72px;
-  letter-spacing: 0.37px;
-  color: #7d73fc;
-  margin: 12px 0px;
-}
-
-#headline-2 {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  color: #edecff;
-  order: 1;
-  margin: 12px 0px;
-}
-
-#content {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #c8c8d4;
-  margin: 54px auto;
-  max-width: 447px;
-}
-
-@media screen and (max-width: 767px) {
-  /* Mobile version */
-
-  .desktop {
+  .mobile {
     display: none;
   }
 
   header {
-    display: flex;
+    display: grid;
     min-width: 375px;
     min-height: 48px;
+    align-items: center;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  header .desktop {
+    margin-right: 0;
   }
 
   #name {
@@ -63,50 +29,112 @@ body {
     text-decoration: none;
   }
 
-  #menu {
-    min-width: 35.33px;
-    height: 22.83px;
-  }
-
-  .menu-element {
-    padding: 5px;
-    flex: 1 1;
-  }
-
-  #skillset {
-    display: flex;
-    background-image: url("Background/Ellipse-2.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    flex-wrap: wrap;
-  }
-
-  .languages {
-    width: 50%;
-    text-align: left;
-    color: white;
-  }
-
-  h4 {
-    color: #9490ff;
-    margin-left: 35px;
-  }
-
-  #social {
-    text-align: center;
-  }
-
   ul {
     list-style: none;
   }
 
-  #more {
+  header ul {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  header li {
+    padding: 10px;
+  }
+
+  header a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #headline {
+    background-image: url("Desktop-background/Background-1.svg");
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 80%;
+    margin: 40px auto auto;
+  }
+
+  #headline-1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 0.37px;
+    width: 50%;
+    color: #7d73fc;
+    margin: 140px auto 24px;
+  }
+
+  #headline-2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #edecff;
+    margin: 12px 0 88px;
+  }
+
+  #content {
+    width: 55%;
+    max-width: 447px;
+    height: 155px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #b3bac5;
+  }
+
+  #skillset {
+    display: flex;
+    background-image: url("Desktop-background/Background-2.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 17%;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .languages {
+    width: 21%;
+    max-width: 149px;
+    text-align: left;
+    color: white;
+    align-self: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .languages h4 {
+    color: #9490ff;
+    margin-left: 0;
+  }
+
+  .languages li {
+    padding: 5px;
+  }
+
+  #social {
+    margin: 100px 0;
+    display: flex;
+  }
+
+  .hr1 {
+    width: 33%;
+  }
+
+  #more,
+  #more-1 {
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
     text-align: center;
     color: #a2a3ae;
     margin-top: 10px;
+    flex: 1 1;
   }
 
   #recent-works h2 {
@@ -115,6 +143,12 @@ body {
     line-height: 52px;
     align-items: center;
     color: #9490ff;
+    width: 80%;
+    margin: auto;
+  }
+
+  #hr2 {
+    width: 80%;
   }
 
   #recent-works-grid {
@@ -126,10 +160,25 @@ body {
     padding-top: 50px;
   }
 
-  .works img {
+  .desktop-layout {
+    display: flex;
+    width: 80%;
+    max-width: 1156px;
+    margin: auto;
+  }
+
+  .desktop-layout img {
     min-width: 327px;
-    max-width: 500px;
+    width: 60%;
     height: auto;
+    max-width: 684px;
+    max-height: 448px;
+    object-fit: contain;
+  }
+
+  .desktop-layout-1 {
+    width: 40%;
+    padding: 5%;
   }
 
   .works img:hover {
@@ -141,38 +190,50 @@ body {
     font-size: 32px;
     line-height: 44px;
     text-align: left;
+    margin-left: 0;
     color: #fff;
-    margin-left: 20px;
   }
 
   .works p {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #dcdce8;
     text-align: left;
-    margin-left: 20px;
+    color: #dfe1e6;
+  }
+
+  .second-works {
+    flex-direction: row-reverse;
+  }
+
+  .second-works > .desktop-layout-1 {
+    margin-left: 0;
+    text-align: left;
+    padding-left: 0;
   }
 
   #work-1 {
-    background-image: url("Background/Ellipse-3.svg");
+    background-image: url("Desktop-background/Background-3.svg");
     background-repeat: no-repeat;
+    background-size: 22%;
   }
 
   #work-2 {
-    background-image: url("Background/Ellipse-4.svg");
+    background-image: url("Desktop-background/Background-4.svg");
     background-repeat: no-repeat;
     background-position: right;
   }
 
   #work-3 {
-    background-image: url("Background/Ellipse-5.svg");
-    background-repeat: no-repeat;
+    background-image: url("Desktop-background/Background-5.svg"), url("Desktop-background/Background-6.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, 100%, 100%;
+    background-size: auto, 20%;
   }
 
   .project-languages {
     display: flex;
-    margin-top: 45px;
+    margin-top: 0;
   }
 
   .project-languages-1 {
@@ -187,7 +248,6 @@ body {
 
   .n1 {
     text-align: left;
-    margin: 20px;
   }
 
   button {
@@ -202,25 +262,13 @@ body {
     transition-duration: 0.5s;
   }
 
-  button:hover {
-    background: #7d73fc;
-    color: #fff;
-  }
-
-  button:active {
-    background-color: #5e42d7;
-  }
-
-  button:disabled {
-    color: #c8c8d4;
-    background-color: #2a2b33;
-  }
-
   #contact {
     display: flex;
     flex-direction: column;
     color: #191765;
     padding: 24px;
+    max-width: 684px;
+    margin: auto;
   }
 
   #contact > h2 {
@@ -250,7 +298,7 @@ body {
     color: #81818c;
   }
 
-  #client-name {
+  .client {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -262,16 +310,14 @@ body {
     box-sizing: border-box;
   }
 
-  #client-email {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #191765;
-    padding: 15px 16px;
-    margin: 0;
-    margin-top: 24px;
-    width: 100%;
-    box-sizing: border-box;
+  #first-name {
+    width: 47%;
+    margin-right: 2%;
+  }
+
+  #last-name {
+    width: 47%;
+    margin-left: 3%;
   }
 
   #client-message {
@@ -294,11 +340,12 @@ body {
     letter-spacing: 0.03em;
     color: white;
     padding: 12px;
-    background-color: #7d73fc;
+    background-color: #9390ff;
     margin: 0;
     margin: 40px auto 40px;
     display: flex;
-    justify-items: center;
+    width: 160px;
+    justify-content: center;
     transition-duration: 0.3s;
   }
 
@@ -318,18 +365,28 @@ body {
 
   footer {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   footer div {
     font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 45px;
     color: #ebebff;
+    padding: 5px;
+    margin-left: 20px;
   }
 
   footer ul {
     display: flex;
     justify-content: center;
+    padding: 5px;
+  }
+
+  .languages ul {
     padding: 0;
+    padding-bottom: 40px;
   }
 }
