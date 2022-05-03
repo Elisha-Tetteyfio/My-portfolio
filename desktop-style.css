@@ -113,11 +113,6 @@
     margin-left: 0;
   }
 
-  .languages ul {
-    padding: 0;
-    padding-bottom: 40px;
-  }
-
   .languages li {
     padding: 5px;
   }
@@ -388,5 +383,10 @@
     display: flex;
     justify-content: center;
     padding: 5px;
+  }
+
+  .languages ul {
+    padding: 0;
+    padding-bottom: 40px;
   }
 }
