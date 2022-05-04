@@ -299,7 +299,7 @@ body {
     margin: 40px auto 40px;
     display: flex;
     justify-items: center;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
   }
 
   #submit-button:hover {
