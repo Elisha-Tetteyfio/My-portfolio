@@ -11,6 +11,9 @@
 - CSS
 - Linters
 
+## Live demo
+[live demo link](https://elisha-tetteyfio.github.io/My-portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
