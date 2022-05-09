@@ -44,17 +44,36 @@ body {
 
 .mobile-menu-open .desktop {
   display: block;
-  position: absolute;
+  position: fixed;
+  color: white;
+  width: 100%;
+  margin: auto;
+  background-color: #191765;
+  height: 100%;
+
 }
 
 .mobile-menu-open .desktop ul {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 .mobile-menu-open .desktop ul a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  color: #edecff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
+  margin: 32px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-menu-open .desktop ul a span {
+  
 }
 
 @media screen and (max-width: 767px) {
