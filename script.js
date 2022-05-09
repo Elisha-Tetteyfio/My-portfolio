@@ -1,3 +1,6 @@
-document.getElementsByClassName("menu-element").addEventListener("click", function(){
-  document.getElementsByClassName("mobile-menu > mobile").style.display = 'none';
+const mainHeader = document.querySelector(".mobile-menu")
+
+const menuButton = document.getElementById("menu")
+menuButton.addEventListener("click", function () {
+  mainHeader.classList.toggle("mobile-menu-open")
 })
