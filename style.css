@@ -7,7 +7,7 @@ body {
 }
 
 #headline {
-  background-image: url("Background/Ellipse-1.svg");
+  background-image: url('Background/Ellipse-1.svg');
   background-repeat: no-repeat;
   margin-top: 40px;
   text-align: center;
@@ -39,6 +39,59 @@ body {
   color: #c8c8d4;
   margin: 54px auto;
   max-width: 447px;
+}
+
+.mobile-menu-open .desktop {
+  display: block;
+  position: fixed;
+  color: white;
+  width: 100%;
+  margin: auto;
+  background-color: #191765;
+  height: 100%;
+  background-image: url("Background/menu-ellipse.svg"), url("Background/menu-ellipse-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, bottom right;
+}
+
+.mobile-menu-open .desktop ul {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.mobile-menu-open .desktop ul a {
+  display: flex;
+  flex-direction: row;
+  color: #edecff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
+  margin: 32px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-menu-open #mail {
+  display: none;
+}
+
+.mobile-menu-open #menu {
+  display: none;
+}
+
+.mobile {
+  z-index: 100;
+}
+
+.mobile #menu-close {
+  display: none;
+}
+
+.mobile-menu-open #menu-close {
+  display: flex;
+  padding: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -75,7 +128,7 @@ body {
 
   #skillset {
     display: flex;
-    background-image: url("Background/Ellipse-2.svg");
+    background-image: url('Background/Ellipse-2.svg');
     background-repeat: no-repeat;
     background-position: right;
     flex-wrap: wrap;
@@ -155,18 +208,18 @@ body {
   }
 
   #work-1 {
-    background-image: url("Background/Ellipse-3.svg");
+    background-image: url('Background/Ellipse-3.svg');
     background-repeat: no-repeat;
   }
 
   #work-2 {
-    background-image: url("Background/Ellipse-4.svg");
+    background-image: url('Background/Ellipse-4.svg');
     background-repeat: no-repeat;
     background-position: right;
   }
 
   #work-3 {
-    background-image: url("Background/Ellipse-5.svg");
+    background-image: url('Background/Ellipse-5.svg');
     background-repeat: no-repeat;
   }
 

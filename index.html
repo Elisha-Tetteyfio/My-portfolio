@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,47 @@
     <title>Elisha's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="desktop-style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <a href="https://github.com/Elisha-Tetteyfio/Portfolio-setup-mobile-version-skeleton" class="menu-element" id="name">Elisha</a>
+    <header class="mobile-menu">
+        <a href="https://github.com/Elisha-Tetteyfio/Portfolio-setup-mobile-version-skeleton" class="menu-element"
+            id="name">Elisha</a>
         <nav class="mobile">
             <img src="Icons/Union.svg" alt="Menu" class="menu-element" id="menu">
+            <img src="Icons/Close.svg" alt="Menu" class="menu-element" id="menu-close">
         </nav>
         <div class="desktop">
             <ul>
-                <li> <a href="#Portfolio">Portfolio</a> </li>
-                <li> <a href="#headline">#About</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
-                <li><img src="Icons/Mail.svg" alt="mail"></li>
+                <li> <a href="#recent-works">
+                        <span>Portfolio</span>
+                        <span> > </span>
+                    </a></li>
+                <li> <a href="#headline">
+                        <span>About</span>
+                        <span> > </span>
+                    </a> </li>
+                <li> <a href="#contact">
+                        <span>Contact</span>
+                        <span> > </span>
+                    </a> </li>
+                <li><img src="Icons/Mail.svg" alt="mail" id="mail"></li>
             </ul>
         </div>
     </header>
     <section id="headline">
         <h1 id="headline-1">Elisha Tetteyfio</h1>
         <h2 id="headline-2">Software developer</h2>
-        <p id="content">I can help you build a product, feature or website. Look through some of my works and experiences! If you like what you see and have a project you need coded,  don't hesitate to contact me.</p>
+        <p id="content">I can help you build a product, feature or website. Look through some of my works and
+            experiences! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
     </section>
-    <hr class="hr1">   
+    <hr class="hr1">
     <section id="skillset">
         <div id="lang" class="languages">
             <h4>Languages</h4>
             <ul>
-                <li>Javascript</li> 
+                <li>Javascript</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Python</li>
@@ -61,7 +76,7 @@
             </ul>
         </div>
     </section>
-    <hr class="hr1">    
+    <hr class="hr1">
     <section id="social">
         <div id="more-1" class="desktop">
             Work
@@ -79,16 +94,17 @@
     </section>
     <section id="recent-works">
         <h2>MY RECENT WORKS</h2>
-        <hr id="hr2">        
+        <hr id="hr2">
         <div id="recent-works-grid">
             <div class="works" id="work-1">
                 <div class="desktop-layout">
                     <img src="Works/work1.png" alt="First work image">
                     <div class="desktop-layout-1">
                         <h4>Personal project</h4>
-                        <p>This is a project with CSS. In this project, I created a 
-                            replica of 
-                            <a href="https://jolly-kalam-23776e.netlify.app/cssgridresponsive/#section-b">this webpage</a>.
+                        <p>This is a project with CSS. In this project, I created a
+                            replica of
+                            <a href="https://jolly-kalam-23776e.netlify.app/cssgridresponsive/#section-b">this
+                                webpage</a>.
                             Feel free to checkout the link and compare it with the final work.
                         </p>
                         <ul class="project-languages">
@@ -104,7 +120,7 @@
                     <img src="Works/work2.png" alt="Second work image">
                     <div class="desktop-layout-1">
                         <h4>Microverse Project 1</h4>
-                        <p>This is a project with CSS. It was an introduction to the 
+                        <p>This is a project with CSS. It was an introduction to the
                             use of linters and the process required for a code review.
                         </p>
                         <ul class="project-languages">
@@ -132,14 +148,15 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
         <div class="works" id="work-4">
             <div class="desktop-layout second-works">
                 <img src="Works/work4.png" alt="Fourth work image">
                 <div class="desktop-layout-1">
                     <h4>Multi-Post Stories</h4>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
+                        dummy text.
                     </p>
                     <ul class="project-languages">
                         <li class="project-languages-1">html</li>
@@ -152,37 +169,44 @@
     </section>
     <section id="contact">
         <h2>Let's chat!</h2>
-        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <p>If you have an application you are interested in developing, a feature that you need built or a project that
+            needs coding. I’d love to help with it </p>
         <form action="https://formspree.io/f/myyobwbp" method="POST">
-          <input type="text" class="client mobile" id="client-name" name="name" placeholder="Enter your name" maxlength="30" required><br>
-          <input type="text" class="client desktop" id="first-name" name="name" placeholder="First name" maxlength="30" required>
-          <input type="text" class="client desktop" id="last-name" name="name" placeholder="Last name" maxlength="30" required><br>
-          <input type="email" class="client" id="client-email" name="email" placeholder="Enter your e-mail" required><br>
-          <textarea id="client-message" name="message" placeholder="Write your message here" maxlength="500" required></textarea>        
-          <input id="submit-button" type="submit" value="Send" class="button">
+            <input type="text" class="client mobile" id="client-name" name="name" placeholder="Enter your name"
+                maxlength="30" required><br>
+            <input type="text" class="client desktop" id="first-name" name="name" placeholder="First name"
+                maxlength="30" required>
+            <input type="text" class="client desktop" id="last-name" name="name" placeholder="Last name" maxlength="30"
+                required><br>
+            <input type="email" class="client" id="client-email" name="email" placeholder="Enter your e-mail"
+                required><br>
+            <textarea id="client-message" name="message" placeholder="Write your message here" maxlength="500"
+                required></textarea>
+            <input id="submit-button" type="submit" value="Send" class="button">
         </form>
     </section>
-        <hr> 
-        <footer>
-            <ul>
-                <li>
-                    <a href="https://github.com/Elisha-Tetteyfio"> <img src="Icons/git.svg" alt="Github"> </a> 
-                </li>
-                <li>
-                    <a href="https://linkedin.com"> <img src="Icons/linkedin.svg" alt="LinkedIn"> </a> 
-                </li>
-                <li>
-                    <a href="https://microverse.org"> <img src="Icons/Enabled.svg" alt="2"> </a> 
-                </li>
-                <li>
-                    <a href="https://twitter.com"> <img src="Icons/twitter.svg" alt="Twitter"> </a> 
-                </li>
-                <li>
-                    <a href="https://microverse.org"><img src="Icons/Disabled.svg" alt="1"></a>
-                </li>
-            </ul>
-            <div>tetteyfioelisha@gmail.com</div>
-        </footer>
-      
+    <hr>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://github.com/Elisha-Tetteyfio"> <img src="Icons/git.svg" alt="Github"> </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com"> <img src="Icons/linkedin.svg" alt="LinkedIn"> </a>
+            </li>
+            <li>
+                <a href="https://microverse.org"> <img src="Icons/Enabled.svg" alt="2"> </a>
+            </li>
+            <li>
+                <a href="https://twitter.com"> <img src="Icons/twitter.svg" alt="Twitter"> </a>
+            </li>
+            <li>
+                <a href="https://microverse.org"><img src="Icons/Disabled.svg" alt="1"></a>
+            </li>
+        </ul>
+        <div>tetteyfioelisha@gmail.com</div>
+    </footer>
+
 </body>
+
 </html>
