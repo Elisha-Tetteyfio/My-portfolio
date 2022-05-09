@@ -91,6 +91,7 @@ body {
 
 .mobile-menu-open #menu-close {
   display: flex;
+  padding: 25px;
 }
 
 @media screen and (max-width: 767px) {
