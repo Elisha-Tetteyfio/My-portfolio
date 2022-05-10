@@ -103,36 +103,44 @@ recentWorkContainer.prepend(recentWorkHeader);
 
 const moreButtons = document.querySelectorAll('.n1 button');
 // const details = document.createElement('div');
-let projectDetails = '';
-const worksDetails = document.createElement('div');
+
+console.log(moreButtons);
+
+const createModal = (index) => {
+  document.body.insertAdjacentHTML(
+    'beforeend',
+    `<div class="worksDetails" id="work-11">
+  <div class="desktop-layout-details ${index % 2 === 1 ? 'second-works' : ''} ">
+  <img src = "Icons/Close.svg" alt="close" id="closeDetails">
+  <h4>${index.title}</h4>
+      <img src="${index.image}" alt="${index.imgAlt}">
+      <div class="desktop-layout-1-details">
+          <p>${
+            index.description
+          } + Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing 
+          and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.
+          </p>
+          <ul class="project-languages-details">
+              ${index.langs}
+          </ul>
+          <div class="liveDemo"><button>See live<img src="Icons/seeLive.svg"></button></div>
+          <div class="source"><button>See source<img src="Icons/git.svg"></button></div>
+      </div>
+  </div>
+</div>`,
+  );
+};
 
 moreButtons.forEach((element) => {
   element.addEventListener('click', () => {
-    let index =projects[element.dataset.project];
-    projectDetails += 
-       `<div class="worksDetails" id="work-11">
-      <div class="desktop-layout-details ${index % 2 === 1 ? 'second-works' : ''} ">
-      <img src = "Icons/Close.svg" alt="close" id="closeDetails">
-      <h4>${index.title}</h4>
-          <img src="${index.image}" alt="${index.imgAlt}">
-          <div class="desktop-layout-1-details">
-              <p>${index.description} + Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-              took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing 
-              and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.
-              </p>
-              <ul class="project-languages-details">
-                  ${index.langs}
-              </ul>
-              <div class="liveDemo"><button>See live<img src="Icons/seeLive.svg"></button></div>
-              <div class="source"><button>See source<img src="Icons/git.svg"></button></div>
-          </div>
-      </div>
-    </div>`
-    worksDetails.innerHTML = projectDetails;
-    document.body.prepend(worksDetails);
-    document.getElementById("closeDetails").addEventListener('click', () => {
-      worksDetails.remove();
+    let index = projects[element.dataset.project];
+    createModal(index);
+    document.body.style.overflow = 'hidden';
+    document.getElementById('closeDetails').addEventListener('click', () => {
+      document.querySelector('.worksDetails').remove();
+      document.body.style.overflow = 'unset';
     });
   });
 });
