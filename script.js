@@ -149,7 +149,7 @@ const submitBtn = document.getElementById('submit-button');
 
 // errorMsg.textContent = '<p>Please write you email in all lowercalse</p>';
 // errorMsg.appendChild();
-const errorMsgContent = `<div class="email-error"><p>Please write you email in all lowercalse</p></div>`;
+const errorMsgContent = `<div class="email-error"><p>Email must be in lowercase</p></div>`;
 let checkIfError = false;
 document.getElementById('submit-button').addEventListener('click', (e) => {
   console.log('submit-click');
