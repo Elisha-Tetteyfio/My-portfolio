@@ -143,3 +143,11 @@ moreButtons.forEach((element) => {
     });
   });
 });
+
+const valid = document.getElementById("client-email");
+document.getElementById('submit-button').addEventListener('click', (e) => {
+  if(valid.value != valid.value.toLowerCase()){
+    e.preventDefault();
+  }
+})
+
