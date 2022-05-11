@@ -18,8 +18,6 @@ document.getElementById('menu-close').addEventListener('click', () => {
   mainHeader.classList.remove('mobile-menu-open');
 });
 
-/// ///////////////////////////////////////////
-
 const projects = [
   {
     title: 'Personal Project',
@@ -103,7 +101,6 @@ recentWorkContainer.prepend(rwGridContainer);
 recentWorkContainer.prepend(recentWorkHeader);
 
 const moreButtons = document.querySelectorAll('.n1 button');
-// const details = document.createElement('div');
 
 const createModal = (index) => {
   document.body.insertAdjacentHTML(
@@ -115,8 +112,8 @@ const createModal = (index) => {
       <img src="${index.image}" alt="${index.imgAlt}">
       <div class="desktop-layout-1-details">
           <p>${
-            index.description
-          } + Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  index.description
+} + Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
           took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing 
           and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.
@@ -147,18 +144,14 @@ moreButtons.forEach((element) => {
 const valid = document.getElementById('client-email');
 const submitBtn = document.getElementById('submit-button');
 
-// errorMsg.textContent = '<p>Please write you email in all lowercalse</p>';
-// errorMsg.appendChild();
-const errorMsgContent = `<div class="email-error"><p>Email must be in lowercase</p></div>`;
+const errorMsgContent = '<div class="email-error"><p>Email must be in lowercase</p></div>';
 let checkIfError = false;
 document.getElementById('submit-button').addEventListener('click', (e) => {
-  console.log('submit-click');
-  if (checkIfError != false) {
+  if (checkIfError !== false) {
     checkIfError.remove();
   }
 
-  if (valid.value != valid.value.toLowerCase()) {
-    console.log('invalid');
+  if (valid.value !== valid.value.toLowerCase()) {
     submitBtn.insertAdjacentHTML('beforebegin', errorMsgContent);
     checkIfError = document.querySelector('.email-error');
     e.preventDefault();
