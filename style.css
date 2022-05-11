@@ -49,9 +49,7 @@ body {
   margin: auto;
   background-color: #191765;
   height: 100%;
-  background-image:
-    url('Background/menu-ellipse.svg'),
-    url('Background/menu-ellipse-2.svg');
+  background-image: url('Background/menu-ellipse.svg'), url('Background/menu-ellipse-2.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: left, bottom right;
 }
@@ -178,6 +176,19 @@ body {
 
 .source button img {
   width: 21px;
+}
+
+.email-error {
+  border: 2px solid #f00;
+  text-align: center;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.email-error p {
+  padding: 10px;
+  color: #f00;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {

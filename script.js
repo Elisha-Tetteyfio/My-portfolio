@@ -18,8 +18,6 @@ document.getElementById('menu-close').addEventListener('click', () => {
   mainHeader.classList.remove('mobile-menu-open');
 });
 
-/// ///////////////////////////////////////////
-
 const projects = [
   {
     title: 'Personal Project',
@@ -103,7 +101,6 @@ recentWorkContainer.prepend(rwGridContainer);
 recentWorkContainer.prepend(recentWorkHeader);
 
 const moreButtons = document.querySelectorAll('.n1 button');
-// const details = document.createElement('div');
 
 const createModal = (index) => {
   document.body.insertAdjacentHTML(
@@ -142,4 +139,21 @@ moreButtons.forEach((element) => {
       document.body.style.overflow = 'unset';
     });
   });
+});
+
+const valid = document.getElementById('client-email');
+const submitBtn = document.getElementById('submit-button');
+
+const errorMsgContent = '<div class="email-error"><p>Email must be in lowercase</p></div>';
+let checkIfError = false;
+document.getElementById('submit-button').addEventListener('click', (e) => {
+  if (checkIfError !== false) {
+    checkIfError.remove();
+  }
+
+  if (valid.value !== valid.value.toLowerCase()) {
+    submitBtn.insertAdjacentHTML('beforebegin', errorMsgContent);
+    checkIfError = document.querySelector('.email-error');
+    e.preventDefault();
+  }
 });
