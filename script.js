@@ -18,9 +18,10 @@ document.getElementById('menu-close').addEventListener('click', () => {
   mainHeader.classList.remove('mobile-menu-open');
 });
 
-//////////////////////////////////////////////
-let projects = [
-  (project1 = {
+/// ///////////////////////////////////////////
+
+const projects = [
+  {
     title: 'Personal Project',
     image: 'Works/work1.png',
     imgAlt: 'First project image',
@@ -31,8 +32,8 @@ let projects = [
     source: '',
     langs:
       '<li class="project-languages-1">html</li><li class="project-languages-1">css</li>',
-  }),
-  (project2 = {
+  },
+  {
     title: 'Microverse Project 1',
     image: 'Works/work2.png',
     imgAlt: 'Second project image',
@@ -42,8 +43,8 @@ let projects = [
     source: '',
     langs:
       '<li class="project-languages-1">html</li><li class="project-languages-1">css</li>',
-  }),
-  (project3 = {
+  },
+  {
     title: 'Personal portfolio project',
     image: 'Works/work3.png',
     imgAlt: 'Third project image',
@@ -53,8 +54,8 @@ let projects = [
     source: '',
     langs:
       '<li class="project-languages-1">html</li><li class="project-languages-1">css</li>',
-  }),
-  (project4 = {
+  },
+  {
     title: 'Multi - Post stories',
     image: 'Works/work4.png',
     imgAlt: '',
@@ -65,7 +66,7 @@ let projects = [
     source: '',
     langs:
       '<li class="project-languages-1">html</li><li class="project-languages-1">css</li>',
-  }),
+  },
 ];
 
 const recentWorkContainer = document.getElementById('recent-works');
@@ -104,8 +105,6 @@ recentWorkContainer.prepend(recentWorkHeader);
 const moreButtons = document.querySelectorAll('.n1 button');
 // const details = document.createElement('div');
 
-console.log(moreButtons);
-
 const createModal = (index) => {
   document.body.insertAdjacentHTML(
     'beforeend',
@@ -116,8 +115,8 @@ const createModal = (index) => {
       <img src="${index.image}" alt="${index.imgAlt}">
       <div class="desktop-layout-1-details">
           <p>${
-            index.description
-          } + Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  index.description
+} + Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
           took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing 
           and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.
@@ -135,7 +134,7 @@ const createModal = (index) => {
 
 moreButtons.forEach((element) => {
   element.addEventListener('click', () => {
-    let index = projects[element.dataset.project];
+    const index = projects[element.dataset.project];
     createModal(index);
     document.body.style.overflow = 'hidden';
     document.getElementById('closeDetails').addEventListener('click', () => {
