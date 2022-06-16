@@ -20,27 +20,30 @@ document.getElementById('menu-close').addEventListener('click', () => {
 
 const projects = [
   {
-    title: 'Personal Project',
-    image: 'Works/work1.png',
+    title: 'To do list',
+    image: 'Works/toDoList.png',
     imgAlt: 'First project image',
-    description: `This is a project with CSS. In this project, I created a replica of
-      <a href="https://jolly-kalam-23776e.netlify.app/cssgridresponsive/#section-b"> this webpage</a>.
-      Feel free to checkout the link and compare it with the final work.`,
-    liveDemo: '',
-    source: '',
+    description: `This is an editable to-do list. You can update it with your daily scheduled activities to 
+      keep yourself reminded of what to do, you can also remove the activities when completed.`,
+    liveDemo: 'https://elisha-tetteyfio.github.io/To-do-list1/',
+    source: 'https://github.com/Elisha-Tetteyfio/To-do-list1.git',
     langs:
-      '<li class="project-languages-1">html</li><li class="project-languages-1">css</li>',
+      `<li class="project-languages-1">html</li>
+      <li class="project-languages-1">css</li>
+      <li class="project-languages-1">javascript</li>`,
   },
   {
-    title: 'Microverse Project 1',
-    image: 'Works/work2.png',
+    title: 'MeetMentors Equip Program',
+    image: 'Works/meetMentors.png',
     imgAlt: 'Second project image',
-    description: `This is a project with CSS. It was an introduction to the
-      use of linters and the process required for a code review.`,
-    liveDemo: '',
-    source: '',
+    description: `This is a website designed for <a href="www.meetmentors.org">MeetMentors</a>'s Equip program.
+    Further details of the event can be seen in the live demo link.`,
+    liveDemo: 'https://elisha-tetteyfio.github.io/First-Capstone-Project/',
+    source: 'https://github.com/Elisha-Tetteyfio/First-Capstone-Project.git',
     langs:
-      '<li class="project-languages-1">html</li><li class="project-languages-1">css</li>',
+    `<li class="project-languages-1">html</li>
+    <li class="project-languages-1">css</li>
+    <li class="project-languages-1">javascript</li>`,
   },
   {
     title: 'Personal portfolio project',
@@ -54,12 +57,12 @@ const projects = [
       '<li class="project-languages-1">html</li><li class="project-languages-1">css</li>',
   },
   {
-    title: 'Multi - Post stories',
-    image: 'Works/work4.png',
-    imgAlt: '',
-    description: `A daily selection of privately personalized reads; no accounts or sign-ups required.
-    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-    standard dummy text.`,
+    title: 'Personal Project',
+    image: 'Works/work1.png',
+    imgAlt: 'First project image',
+    description: `This is a project with CSS. In this project, I created a replica of
+      <a href="https://jolly-kalam-23776e.netlify.app/cssgridresponsive/#section-b"> this webpage</a>.
+      Feel free to checkout the link and compare it with the final work.`,
     liveDemo: '',
     source: '',
     langs:
@@ -111,18 +114,23 @@ const createModal = (index) => {
   <h4>${index.title}</h4>
       <img src="${index.image}" alt="${index.imgAlt}">
       <div class="desktop-layout-1-details">
-          <p>${
-  index.description
-} + Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-          took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing 
-          and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.
+          <p>${index.description}  The information entered in the to-do list is not altered when the page is
+          refreshed or when internet connection is lost. <br>
+          This project was designed with CSS, HTML and JavaScript. 
           </p>
           <ul class="project-languages-details">
               ${index.langs}
           </ul>
-          <div class="liveDemo"><button>See live<img src="Icons/seeLive.svg"></button></div>
-          <div class="source"><button>See source<img src="Icons/git.svg"></button></div>
+          <div class="liveDemo"><button>
+            <a href="${index.liveDemo}">
+              See live<img src="Icons/seeLive.svg">
+            </a>
+          </button></div>
+          <div class="source"><button>
+            <a href="${index.source}">
+              See source<img src="Icons/git.svg">
+            </a>
+          </button></div>
       </div>
   </div>
 </div>`,
